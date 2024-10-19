@@ -404,9 +404,9 @@ void render_hud_breath_meter(void) {
  * Renders the amount of lives Mario has.
  */
 void render_hud_mario_lives(void) {
-    print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(22), HUD_TOP_Y, ","); // 'Mario Head' glyph
-    print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(38), HUD_TOP_Y, "*"); // 'X' glyph
-    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(54), HUD_TOP_Y, "%d", gHudDisplay.lives);
+    print_text(HUD_LIVES_X, HUD_TOP_Y, ","); // 'Mario Head' glyph
+    print_text((HUD_LIVES_X + 16), HUD_TOP_Y, "*"); // 'X' glyph
+    print_text_fmt_int((HUD_LIVES_X + 30), HUD_TOP_Y, "%d", gHudDisplay.lives);
 }
 
 #ifdef VANILLA_STYLE_CUSTOM_DEBUG
@@ -425,9 +425,9 @@ void render_debug_mode(void) {
  * Renders the amount of coins collected.
  */
 void render_hud_coins(void) {
-    print_text(HUD_COINS_X, HUD_TOP_Y, "$"); // 'Coin' glyph
-    print_text((HUD_COINS_X + 16), HUD_TOP_Y, "*"); // 'X' glyph
-    print_text_fmt_int((HUD_COINS_X + 30), HUD_TOP_Y, "%d", gHudDisplay.coins);
+    print_text(HUD_COINS_X, 190, "$"); // 'Coin' glyph
+    print_text((HUD_COINS_X + 16), 190, "*"); // 'X' glyph
+    print_text_fmt_int((HUD_COINS_X + 30), 190, "%d", gHudDisplay.coins);
 }
 
 /**
@@ -577,7 +577,7 @@ void render_hud(void) {
         }
 #endif
 
-        if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT) {
+        if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {
             render_hud_coins();
         }
 

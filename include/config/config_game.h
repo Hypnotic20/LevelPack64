@@ -13,7 +13,7 @@
 /**
  * Enable lives and the lives counter. The number next to the define is the number of lives you start with.
  */
-// #define ENABLE_LIVES 4
+#define ENABLE_LIVES 2
 
 /**
  * This can be 0..127.
@@ -28,7 +28,7 @@
 /**
  * Air/breath meter is separate from health meter when underwater.
  */
-// #define BREATH_METER
+#define BREATH_METER
 
 /**
  * Number of coins to spawn the "100 coin" star. If you remove the define altogether, then there won't be a 100 coin star at all.
@@ -53,12 +53,12 @@
 /**
  * Number of possible unique model ID's (keep it higher than 256).
  */
-#define MODEL_ID_COUNT 256
+#define MODEL_ID_COUNT 400
 
 /**
  * Number of supported areas per level.
  */
-#define AREA_COUNT 8
+#define AREA_COUNT 16
 
 /**
  * Makes signs and NPCs easier to talk to.

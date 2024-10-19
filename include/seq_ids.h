@@ -24,7 +24,7 @@ enum SeqId {
     SEQ_EVENT_PIRANHA_PLANT,          // 0x0B
     SEQ_LEVEL_UNDERGROUND,            // 0x0C
     SEQ_MENU_STAR_SELECT,             // 0x0D
-    SEQ_EVENT_POWERUP,                // 0x0E
+    SEQ_EVENT_POWERUP,                // 0x26
     SEQ_EVENT_METAL_CAP,              // 0x0F
     SEQ_EVENT_KOOPA_MESSAGE,          // 0x10
     SEQ_LEVEL_KOOPA_ROAD,             // 0x11
@@ -45,7 +45,10 @@ enum SeqId {
     SEQ_EVENT_CUTSCENE_ENDING,        // 0x20
     SEQ_MENU_FILE_SELECT,             // 0x21
     SEQ_EVENT_CUTSCENE_LAKITU,        // 0x22 (not in JP)
-    SEQ_COUNT
+    SEQ_VIRTUAL_INSANITY,             // 0x23
+    SEQ_PASSPORT_MID,                 // 0x24
+    SEQ_COUNT,
+    
 };
 
 #endif // SEQ_IDS_H
